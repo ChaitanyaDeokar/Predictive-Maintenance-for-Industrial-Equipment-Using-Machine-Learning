@@ -1,0 +1,7 @@
+Flask
+dash
+dash-bootstrap-components
+joblib
+numpy
+pandas
+plotly
