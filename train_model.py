@@ -25,7 +25,7 @@ def train_and_save_model():
     model.fit(X, y)
     
     # Ensure the models directory exists
-    models_dir = os.path.join(os.path.dirname(__file__), 'models')
+    models_dir = os.path.join(os.getcwd(), 'models')  # Using os.getcwd() for current working directory
     os.makedirs(models_dir, exist_ok=True)
     
     model_path = os.path.join(models_dir, 'predictive_model.pkl')
@@ -34,3 +34,4 @@ def train_and_save_model():
 
 if __name__ == '__main__':
     train_and_save_model()
+
